@@ -2,3 +2,37 @@
   Override default refinery formatting below.
   Formatting applies to backend WYSIWYG editors and all frontend.
 */
+input{
+	border: none;
+	border-bottom: 1px solid #949495;
+	color: #2f2f2f;
+}
+textarea{
+	border: none;
+	color: #2f2f2f;
+	background: url(/images/textarea.png);
+}
+input{
+	padding-right: 60px;
+}
+.field{
+	position: relative;
+	
+}
+label{
+	color: #2f2f2f;
+	font-size: 10px;
+	position: absolute;
+	right: 0;
+	top: -7px;
+}
+.actions{
+	cursor: pointer; 
+}
+.actions input{
+	color: #2673a3;
+	border: none;
+	background: none;
+	padding-right: 0;
+	cursor: pointer; 
+}
