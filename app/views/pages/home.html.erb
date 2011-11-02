@@ -12,8 +12,22 @@
     <%=link_to "", "", :class=> "team"%>
     <%=link_to "", "", :class=> "news"%>
     <%=link_to "", "", :class=> "careers"%>
-    <%=link_to "", "/contact", :class=> "contacts"%>
+    <%=link_to "", "/contact", :class=> "contacts", :id=>"left"%>
     <%=link_to "", "", :class=> "start"%>
     
   </div>
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+
+
+$("#left").click(function(){
+   $(".home_menu_container").animate({"left": "-=130px"}, "slow");  
+   $(".contacts").animate({"left": "+=130px"}, "slow");
+   $(".start").animate({"left": "+=130px"}, "slow");
+  
+});
+  
+
+</script>

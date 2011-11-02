@@ -1,0 +1,111 @@
+#page{
+	display: block!important;
+	height: 893px;
+	position: relative;
+	
+}
+#page_container{
+	height: 938px;
+	display: block;
+
+}
+.home_menu_container{
+	display: block!important;
+	height: 808px;
+	width: 925px;
+	background: url(/images/home_menu.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: -130px;
+	background-position: bottom;	
+}
+.home_menu{
+	position: relative;
+	height: 808px;
+	width: 925px;
+	display: block;
+	
+}
+.about_us{
+	height: 194px;
+	width: 290px;
+	display: block;
+	position: absolute;
+  top: 27px;
+  left: 0px;	
+}
+
+.about_us:hover{
+	background: url(/images/about_home.png) no-repeat;
+	
+}
+.operations{
+	height: 212px;
+	width: 377px;
+	display: block;
+	position: absolute;
+  top: 9px;
+  left: 287px;
+	
+}
+.operations:hover{
+	background: url(/images/oper_home.png) no-repeat scroll center bottom transparent;	
+}
+.team{
+	height: 149px;
+	width: 218px;
+	display: block;
+	position: absolute;
+  top: 221px;
+  left: 288px;
+	
+}
+.team:hover{
+	background: url(/images/team_home.png) no-repeat scroll center bottom transparent;	
+}
+.news{
+	height: 131px;
+	width: 231px;
+	display: block;
+	position: absolute;
+  top: 221px;
+  left: 57px;
+	
+}
+.news:hover{
+	background: url(/images/news_home.png) no-repeat scroll center top transparent;	
+}
+.careers{
+	height: 300px;
+	width: 419px;
+	display: block;
+	position: absolute;
+  top: 221px;
+  left: 506px;
+	
+}
+.careers:hover{
+	background: url(/images/careers_home.png) no-repeat scroll center top transparent;	
+}
+.contacts{
+	height: 76px;
+	width: 103px;
+	display: block;
+	position: absolute;
+  top: 221px;
+  left: 1112px;
+  background: url(/images/start_home.png) no-repeat;
+	
+}
+.contacts:hover{
+}
+.start{
+	height: 76px;
+	width: 2px;
+	display: block;
+	position: absolute;
+  top: 221px;
+  left: -31px;
+  background: url(/images/start_home.png) no-repeat scroll center top transparent;
+	
+}

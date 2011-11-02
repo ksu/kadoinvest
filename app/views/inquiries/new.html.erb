@@ -1,14 +1,15 @@
-<div class="type_menu_container">
- <div class="type_menu">
-   <%=link_to "", "/about", :class=> "type_about_us"%>
-   <%=link_to "", "", :class=> "type_operations"%>
-   <%=link_to "", "", :class=> "type_team"%>
-   <%=link_to "", "", :class=> "type_news"%>
-   <%=link_to "", "", :class=> "type_careers"%>
-   <%=link_to "", "/contact", :class=> "type_contacts"%>
-   <%=link_to "", "", :class=> "type_start"%>
-
- </div>
+<%= stylesheet_link_tag "contact.css" %>
+<div class="home_menu_container">
+  <div class="home_menu">
+    <%=link_to "", "/about", :class=> "about_us"%>
+    <%=link_to "", "", :class=> "operations"%>
+    <%=link_to "", "", :class=> "team"%>
+    <%=link_to "", "", :class=> "news"%>
+    <%=link_to "", "", :class=> "careers"%>
+    <%=link_to "", "/contact", :class=> "contacts", :id=>"left"%>
+    <%=link_to "", "", :class=> "start"%>
+    
+  </div>
 </div>
 <div class="right">
 <section class='content'>
@@ -48,3 +49,16 @@
   </div>
     </div>
 <%#= render :partial => "/shared/content_page" %>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script>
+
+
+$("#left").click(function(){
+   $(".type_menu_container").animate({"left": "-=50px"}, "slow");  
+  
+  
+});
+  
+
+</script>
