@@ -1,12 +1,21 @@
+@font-face {
+    font-family: Raleway; /* имя шрифта для CSS правил */
+    src: local("Raleway"), /* проверяем наличие шрифта в ОС пользователя */
+         url(/raleway_thin.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+
+  }
+
 body {
   margin: 0px;
   font-family: 'Raleway',serif;
+  font-family: url(/raleway_thin.ttf);
   color: #2f2f2f;
 
 }
 p,a,ul,span{
 	font-size: 12px;
 	font-family: 'Raleway',serif;
+	font-family: url(/raleway_thin.ttf);
 }
 h1, h2{
 	font-size: 14px;
