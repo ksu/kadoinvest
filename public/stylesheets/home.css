@@ -45,7 +45,7 @@
 }
 .operations{
 	height: 212px;
-	width: 377px;
+	width: 378px;
 	display: block;
 	position: absolute;
   top: 9px;
@@ -102,6 +102,9 @@
 	
 }
 .contacts:hover{
+}
+.act{
+	background: url(/images/start_home.png) no-repeat;
 }
 .start{
 	height: 76px;
