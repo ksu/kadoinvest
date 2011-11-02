@@ -1,0 +1,50 @@
+<div class="type_menu_container">
+ <div class="type_menu">
+   <%=link_to "", "/about", :class=> "type_about_us"%>
+   <%=link_to "", "", :class=> "type_operations"%>
+   <%=link_to "", "", :class=> "type_team"%>
+   <%=link_to "", "", :class=> "type_news"%>
+   <%=link_to "", "", :class=> "type_careers"%>
+   <%=link_to "", "/contact", :class=> "type_contacts"%>
+   <%=link_to "", "", :class=> "type_start"%>
+
+ </div>
+</div>
+<div class="right">
+<section class='content'>
+
+  <div class='inquiries'>
+    <%=raw @page[Page.default_parts.first.to_sym] %>
+
+    <%= form_for @inquiry do |f| %>
+      <%= render :partial => "/shared/admin/error_messages",
+                 :locals => {
+                   :object => @inquiry,
+                   :include_object_name => true
+                 } %>
+      <div class='field'>
+        <%= f.required_label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class='field'>
+        <%= f.required_label :email %>
+        <%= f.text_field :email %>
+      </div>
+      <div class='field'>
+        <%= f.label :phone %>
+        <%= f.text_field :phone %>
+      </div>
+      <div class='field message_field'>
+        <%= f.required_label :message  %>
+        <%= f.text_area :message, :rows => 8 %>
+      </div>
+      <div class='actions'>
+        <%= f.submit t('.send') %>
+        <%= link_to t('.privacy_policy'), "/pages/privacy-policy", :id => "privacy_link" if RefinerySetting.find_or_set(:show_contact_privacy_link, false) %>
+      </div>
+    <% end %>
+  </div>
+
+  </div>
+    </div>
+<%#= render :partial => "/shared/content_page" %>
