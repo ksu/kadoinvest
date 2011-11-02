@@ -1,7 +1,15 @@
-<h1 id='logo'>
-  <%= link_to RefinerySetting.find_or_set(:site_name, "Company Name"), root_path %>
-</h1>
-<%= render(:partial => "/shared/menu", :locals => {
+<%=link_to "","/", :class=>"logo" %>
+<%#= render(:partial => "/shared/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
            }) %>
+<div class="address_box">
+   <h3>Storm Ventures</h3>   
+   <p>2440 Sand Hill Road; Suite 301
+   Menlo Park, CA 94025-6900</p>
+   <p>Main Phone: (650) 926-8800
+  <br/>
+   Main Fax: (650) 926-8888</p>
+</div>
+ 
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css" >
