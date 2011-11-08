@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="operations">
+    <% @operations.each do |operation| %>
+      <li>
+        <%= link_to operation.title, operation_path(operation) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

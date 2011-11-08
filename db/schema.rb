@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111102143109) do
+ActiveRecord::Schema.define(:version => 20111108101439) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -44,6 +44,16 @@ ActiveRecord::Schema.define(:version => 20111102143109) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "operations", :force => true do |t|
+    t.string   "title"
+    t.text     "part"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "operations", ["id"], :name => "index_operations_on_id"
 
   create_table "page_part_translations", :force => true do |t|
     t.integer  "page_part_id"

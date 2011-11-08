@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    operations:
+      title: Operations
+  admin:
+    operations:
+      actions:
+        create_new: Add New Operation
+        reorder: Reorder Operations
+        reorder_done: Done Reordering Operations
+      records:
+        title: Operations
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Operations yet. Click "Add New Operation" to add your first operation.
+      operation:
+        view_live_html: View this operation live <br/><em>(opens in a new window)</em>
+        edit: Edit this operation
+        delete: Remove this operation forever
+  operations:
+    show:
+      other: Other Operations

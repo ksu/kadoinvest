@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    operations:
+      title: Operations
+  admin:
+    operations:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Operation
+        reorder: Réordonner les Operations
+        reorder_done: Fin de réordonnancement des Operations
+      records:
+        title: Operations
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Operation. Cliquer sur "Créer un(e) nouve(au/l/lle) Operation" pour créer votre premi(er/ère) operation.'
+      operation:
+        view_live_html: Voir ce(t/tte) operation <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) operation
+        delete: Supprimer définitivement ce(t/tte) operation
+  operations:
+    show:
+      other: Autres Operations

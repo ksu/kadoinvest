@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    operations:
+      title: Operations
+  admin:
+    operations:
+      actions:
+        create_new: Lag en ny Operation
+        reorder: Endre rekkefølgen på Operations
+        reorder_done: Ferdig å endre rekkefølgen Operations
+      records:
+        title: Operations
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Operations enda. Klikk på "Lag en ny Operation" for å legge til din første operation.
+      operation:
+        view_live_html: Vis hvordan denne operation ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne operation
+        delete: Fjern denne operation permanent
+  operations:
+    show:
+      other: Andre Operations

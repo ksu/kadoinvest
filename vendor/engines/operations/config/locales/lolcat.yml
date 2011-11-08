@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    operations:
+      title: Operations
+  admin:
+    operations:
+      actions:
+        create_new: CREATE NEW Operation
+        reorder: REORDR Operations
+        reorder_done: DUN REORDERIN Operations
+      records:
+        title: Operations
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Operations YET. CLICK "CREATE NEW Operation" 2 ADD UR FURST operation.
+      operation:
+        view_live_html: VIEW DIS operation LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS operation
+        delete: REMOOV DIS operation FOREVR
+  operations:
+    show:
+      other: OTHR Operations

@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    operations:
+      title: Operations
+  admin:
+    operations:
+      actions:
+        create_new: Maak een nieuwe Operation
+        reorder: Wijzig de volgorde van de Operations
+        reorder_done: Klaar met het wijzingen van de volgorde van de Operations
+      records:
+        title: Operations
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Operations. Druk op 'Maak een nieuwe Operation' om de eerste aan te maken.
+      operation:
+        view_live_html: Bekijk deze operation op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze operation
+        delete: Verwijder deze operation voor eeuwig
+  operations:
+    show:
+      other: Andere Operations
