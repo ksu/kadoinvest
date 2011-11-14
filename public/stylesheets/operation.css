@@ -1,0 +1,102 @@
+/* Type page*/
+
+.about_title{
+	background: url(/images/about_title.png);
+	display: block;
+	height: 21px;
+	width: 122px;
+	margin-bottom: 10px;
+}
+.right{
+	float: right;
+	
+}
+.content{
+	display: block;
+	height: auto;
+	width: 703px;
+}
+.content p{
+	word-spacing: 1.5px;
+	letter-spacing: 0.5px;
+}
+#page{
+	display: block!important;
+	height: 1209px;
+	position: relative;
+	padding-top: 45px;
+	
+}
+#page_container{
+	height: 1309px;
+	display: block;
+
+}
+
+.type_about_us{
+  top: 647px;
+  left: 168px;
+}
+
+.type_operations{
+    top: 686px;
+    left: 372px;	
+}
+.type_team{
+  top: 833px;
+  left: 372px;
+	
+}
+.type_news{
+  top: 785px;
+  left: 209px;
+	
+}
+.type_careers{
+  top: 785px;
+  left: 528px;
+	
+}
+
+
+
+.type_menu_container{
+	display: block!important;
+	height: 1209px;
+	width: 925px;
+	background: url(/images/bg3.png) no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: -53px;	
+}
+.type_menu{
+	position: relative;
+	height: 1209px;
+	width: 925px;
+	display: block;
+	
+}
+.type_contacts{
+	height: 76px;
+	width: 103px;
+	display: block;
+	position: absolute;
+  top: 298px;
+  left: 1034px;
+  background: url(/images/contacts_home.png) no-repeat scroll center top transparent;
+	
+}
+.type_contacts:hover{
+}
+.type_start{
+	height: 76px;
+	width: 2px;
+	display: block;
+	position: absolute;
+  top: 298px;
+  left: -111px;
+  background: url(/images/start_home.png) no-repeat scroll center top transparent;
+	
+}
+
+/* -------*/

@@ -1,11 +1,26 @@
-<% content_for :body_content_left do %>
-  <ul id="operations">
-    <% @operations.each do |operation| %>
-      <li>
-        <%= link_to operation.title, operation_path(operation) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
+<%= stylesheet_link_tag "operation" %>
+<div class="right">
+  <section class='content'>
+    <div id="operations">
+      <h1>OPERATIONS</h1>
+      <% @operations.each do |operation| %>
 
-<%= render :partial => "/shared/content_page" %>
+          <%=raw operation.title %>
+          <%=raw operation.part %>
+
+      <% end %>
+    </div>
+  </section>
+</div>
+<div class="type_menu_container">
+ <div class="type_menu">
+   <%=link_to "", "/about", :class=> "type_about_us"%>
+   <%=link_to "", "/operations", :class=> "type_operations"%>
+   <%=link_to "", "", :class=> "type_team"%>
+   <%=link_to "", "", :class=> "type_news"%>
+   <%=link_to "", "", :class=> "type_careers"%>
+   <%=link_to "", "", :class=> "type_contacts"%>
+   <%=link_to "", "", :class=> "type_start"%>
+ </div>
+</div>
+<%#= render :partial => "/shared/content_page" %>

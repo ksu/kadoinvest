@@ -55,8 +55,54 @@ body{
 	display: block;
 
 }
+.type_about_us:hover, .type_operations:hover, .type_careers:hover, .type_news:hover, .type_team:hover{
+	background: url(/images/active_link.png);
+	
+}
+.type_about_us{
+  height: 89px;
+  width: 202px;
+  display: block;
+  position: absolute;
+  top: 352px;
+  left: 171px;
+}
 
-
+.type_operations{
+	height: 97px;
+	width: 265px;
+	display: block;
+	position: absolute;
+    top: 390px;
+    left: 371px;	
+}
+.type_team{
+	height: 56px;
+	width: 154px;
+	display: block;
+	position: absolute;
+  top: 536px;
+  left: 371px;
+	
+}
+.type_news{
+	height: 41px;
+	width: 163px;
+	display: block;
+	position: absolute;
+  top: 488px;
+  left: 210px;
+	
+}
+.type_careers{
+	height: 158px;
+	width: 295px;
+	display: block;
+	position: absolute;
+  top: 488px;
+  left: 525px;
+	
+}
 .type_menu_container{
 	display: block!important;
 	height: 808px;

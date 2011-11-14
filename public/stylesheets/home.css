@@ -30,8 +30,12 @@
 	display: block;
 	
 }
+.about_us:hover, .operations:hover, .careers:hover, .news:hover, .team:hover{
+	background: url(/images/active_link.png);
+}
+
 .about_us{
-	height: 194px;
+	height: 127px;
 	width: 290px;
 	display: block;
 	position: absolute;
@@ -39,36 +43,28 @@
   left: 0px;	
 }
 
-.about_us:hover{
-	background: url(/images/about_home.png) no-repeat;
-	
-}
 .operations{
-	height: 212px;
+	height: 139px;
 	width: 378px;
 	display: block;
 	position: absolute;
-  top: 9px;
+  top: 82px;
   left: 287px;
 	
 }
-.operations:hover{
-	background: url(/images/oper_home.png) no-repeat scroll center bottom transparent;	
-}
+
 .team{
-	height: 149px;
+	height: 80px;
 	width: 218px;
 	display: block;
 	position: absolute;
-  top: 221px;
+  top: 292px;
   left: 288px;
 	
 }
-.team:hover{
-	background: url(/images/team_home.png) no-repeat scroll center bottom transparent;	
-}
+
 .news{
-	height: 131px;
+	height: 60px;
 	width: 231px;
 	display: block;
 	position: absolute;
@@ -76,11 +72,9 @@
   left: 57px;
 	
 }
-.news:hover{
-	background: url(/images/news_home.png) no-repeat scroll center top transparent;	
-}
+
 .careers{
-	height: 300px;
+	height: 226px;
 	width: 419px;
 	display: block;
 	position: absolute;
@@ -88,9 +82,7 @@
   left: 506px;
 	
 }
-.careers:hover{
-	background: url(/images/careers_home.png) no-repeat scroll center top transparent;	
-}
+
 .contacts{
 	height: 76px;
 	width: 103px;
