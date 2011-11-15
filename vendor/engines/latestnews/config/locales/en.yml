@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    latestnews:
+      title: Latestnews
+  admin:
+    latestnews:
+      actions:
+        create_new: Add New Latestnew
+        reorder: Reorder Latestnews
+        reorder_done: Done Reordering Latestnews
+      records:
+        title: Latestnews
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Latestnews yet. Click "Add New Latestnew" to add your first latestnew.
+      latestnew:
+        view_live_html: View this latestnew live <br/><em>(opens in a new window)</em>
+        edit: Edit this latestnew
+        delete: Remove this latestnew forever
+  latestnews:
+    show:
+      other: Other Latestnews

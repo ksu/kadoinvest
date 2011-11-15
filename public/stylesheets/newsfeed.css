@@ -1,0 +1,56 @@
+/* Type page*/
+
+#page{
+	padding-top: 208px;
+}
+.feeds_box{
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	width: 925px;
+}
+.newsfeed{
+	position: relative;
+	
+}
+
+.news_right{
+	position: absolute;
+	top: 45px;
+	right: -80px;	
+	position: absolute;
+    
+}
+.news_left{
+	position: absolute;
+	top: 45px;
+	left: -60px;
+	height: 76px;
+	width: 2px;
+	display: block;
+	position: absolute;
+    background: url(/images/start_home.png) no-repeat scroll center top transparent;
+	
+	
+}
+.onefeed{
+	position: absolute;
+	right: 0px;
+	top: 162px;
+}
+
+.news_header_block{
+	width: 180px;
+	height: 126px;
+	padding-right: 50px;
+	display: block;
+	text-decoration: none; 
+	overflow: hidden;
+}
+.news_header_block span{
+	color: #2f2f2f;
+}
+.news_header_block h2{
+	line-height: 14px;
+}
+/* -------*/

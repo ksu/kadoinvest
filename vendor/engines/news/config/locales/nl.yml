@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    news:
+      title: News
+  admin:
+    news:
+      actions:
+        create_new: Maak een nieuwe New
+        reorder: Wijzig de volgorde van de News
+        reorder_done: Klaar met het wijzingen van de volgorde van de News
+      records:
+        title: News
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen News. Druk op 'Maak een nieuwe New' om de eerste aan te maken.
+      new:
+        view_live_html: Bekijk deze new op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze new
+        delete: Verwijder deze new voor eeuwig
+  news:
+    show:
+      other: Andere News

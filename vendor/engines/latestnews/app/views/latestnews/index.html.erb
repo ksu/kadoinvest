@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="latestnews">
+    <% @latestnews.each do |latestnew| %>
+      <li>
+        <%= link_to latestnew.title, latestnew_path(latestnew) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

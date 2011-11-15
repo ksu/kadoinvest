@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    news:
+      title: News
+  admin:
+    news:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) New
+        reorder: Réordonner les News
+        reorder_done: Fin de réordonnancement des News
+      records:
+        title: News
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) New. Cliquer sur "Créer un(e) nouve(au/l/lle) New" pour créer votre premi(er/ère) new.'
+      new:
+        view_live_html: Voir ce(t/tte) new <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) new
+        delete: Supprimer définitivement ce(t/tte) new
+  news:
+    show:
+      other: Autres News

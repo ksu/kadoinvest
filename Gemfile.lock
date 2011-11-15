@@ -1,6 +1,9 @@
 PATH
   remote: vendor/engines
   specs:
+    refinerycms-latestnews (1.0)
+    refinerycms-news (1.0)
+    refinerycms-newsfeeds (1.0)
     refinerycms-operations (1.0)
 
 GEM
@@ -165,5 +168,8 @@ DEPENDENCIES
   refinerycms (~> 1.0.8)
   refinerycms-i18n (~> 1.0.0)
   refinerycms-inquiries (~> 1.0.0)
+  refinerycms-latestnews (= 1.0)!
+  refinerycms-news (= 1.0)!
+  refinerycms-newsfeeds (= 1.0)!
   refinerycms-operations (= 1.0)!
   sqlite3

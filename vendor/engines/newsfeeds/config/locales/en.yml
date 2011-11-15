@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    newsfeeds:
+      title: Newsfeeds
+  admin:
+    newsfeeds:
+      actions:
+        create_new: Add New Newsfeed
+        reorder: Reorder Newsfeeds
+        reorder_done: Done Reordering Newsfeeds
+      records:
+        title: Newsfeeds
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Newsfeeds yet. Click "Add New Newsfeed" to add your first newsfeed.
+      newsfeed:
+        view_live_html: View this newsfeed live <br/><em>(opens in a new window)</em>
+        edit: Edit this newsfeed
+        delete: Remove this newsfeed forever
+  newsfeeds:
+    show:
+      other: Other Newsfeeds

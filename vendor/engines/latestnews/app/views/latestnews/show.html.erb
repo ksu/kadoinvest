@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @latestnew.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @latestnew.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Text1</h1>
+    <p>
+      <%=raw @latestnew.text1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Text2</h1>
+    <p>
+      <%=raw @latestnew.text2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Date</h1>
+    <p>
+      <%=raw @latestnew.date %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="latestnews">
+      <% @latestnews.each do |latestnew| %>
+        <li>
+          <%= link_to latestnew.title, latestnew_path(latestnew) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

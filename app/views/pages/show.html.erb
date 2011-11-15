@@ -1,6 +1,6 @@
 <div class="right">
 <section class='content'>
-  <div class="about_title"></div>
+  <h1><%=raw @page.title%></h1>
 <section id='body_content'>
   <%=raw @page.content_for(:body) %>
 </section>
@@ -11,12 +11,12 @@
  </div>
 <div class="type_menu_container">
  <div class="type_menu">
-   <%=link_to "", "/about", :class=> "type_about_us"%>
-   <%=link_to "", "/operations", :class=> "type_operations"%>
-   <%=link_to "", "", :class=> "type_team"%>
-   <%=link_to "", "", :class=> "type_news"%>
-   <%=link_to "", "", :class=> "type_careers"%>
-   <%=link_to "", "", :class=> "type_contacts"%>
+	 <a href="/about" class= "type_about_us"><div></div></a>
+   <a href="/operations" class= "type_operations"><div></div></a>
+   <a href="/team" class= "type_team"><div></div></a>
+   <a href="/newsfeeds" class= "type_news"><div></div></a>
+   <a href="/careers" class= "type_careers"><div></div></a>
+   <%=link_to "", "", :class=> "type_contacts arrow"%>
    <%=link_to "", "", :class=> "type_start"%>
  </div>
 </div>

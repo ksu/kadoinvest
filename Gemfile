@@ -60,3 +60,6 @@ gem 'refinerycms-i18n',         '~> 1.0.0'
 # END USER DEFINED
 
 gem 'refinerycms-operations', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-news', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-latestnews', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-newsfeeds', '1.0', :path => 'vendor/engines'

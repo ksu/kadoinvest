@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    newsfeeds:
+      title: Newsfeeds
+  admin:
+    newsfeeds:
+      actions:
+        create_new: Lag en ny Newsfeed
+        reorder: Endre rekkefølgen på Newsfeeds
+        reorder_done: Ferdig å endre rekkefølgen Newsfeeds
+      records:
+        title: Newsfeeds
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Newsfeeds enda. Klikk på "Lag en ny Newsfeed" for å legge til din første newsfeed.
+      newsfeed:
+        view_live_html: Vis hvordan denne newsfeed ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne newsfeed
+        delete: Fjern denne newsfeed permanent
+  newsfeeds:
+    show:
+      other: Andre Newsfeeds

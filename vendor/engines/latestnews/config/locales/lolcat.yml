@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    latestnews:
+      title: Latestnews
+  admin:
+    latestnews:
+      actions:
+        create_new: CREATE NEW Latestnew
+        reorder: REORDR Latestnews
+        reorder_done: DUN REORDERIN Latestnews
+      records:
+        title: Latestnews
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Latestnews YET. CLICK "CREATE NEW Latestnew" 2 ADD UR FURST latestnew.
+      latestnew:
+        view_live_html: VIEW DIS latestnew LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS latestnew
+        delete: REMOOV DIS latestnew FOREVR
+  latestnews:
+    show:
+      other: OTHR Latestnews

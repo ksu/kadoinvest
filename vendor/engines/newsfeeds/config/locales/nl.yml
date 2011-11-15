@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    newsfeeds:
+      title: Newsfeeds
+  admin:
+    newsfeeds:
+      actions:
+        create_new: Maak een nieuwe Newsfeed
+        reorder: Wijzig de volgorde van de Newsfeeds
+        reorder_done: Klaar met het wijzingen van de volgorde van de Newsfeeds
+      records:
+        title: Newsfeeds
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Newsfeeds. Druk op 'Maak een nieuwe Newsfeed' om de eerste aan te maken.
+      newsfeed:
+        view_live_html: Bekijk deze newsfeed op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze newsfeed
+        delete: Verwijder deze newsfeed voor eeuwig
+  newsfeeds:
+    show:
+      other: Andere Newsfeeds

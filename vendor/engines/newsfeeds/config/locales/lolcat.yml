@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    newsfeeds:
+      title: Newsfeeds
+  admin:
+    newsfeeds:
+      actions:
+        create_new: CREATE NEW Newsfeed
+        reorder: REORDR Newsfeeds
+        reorder_done: DUN REORDERIN Newsfeeds
+      records:
+        title: Newsfeeds
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Newsfeeds YET. CLICK "CREATE NEW Newsfeed" 2 ADD UR FURST newsfeed.
+      newsfeed:
+        view_live_html: VIEW DIS newsfeed LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS newsfeed
+        delete: REMOOV DIS newsfeed FOREVR
+  newsfeeds:
+    show:
+      other: OTHR Newsfeeds

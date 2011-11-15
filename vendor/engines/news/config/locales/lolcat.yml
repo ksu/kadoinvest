@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    news:
+      title: News
+  admin:
+    news:
+      actions:
+        create_new: CREATE NEW New
+        reorder: REORDR News
+        reorder_done: DUN REORDERIN News
+      records:
+        title: News
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO News YET. CLICK "CREATE NEW New" 2 ADD UR FURST new.
+      new:
+        view_live_html: VIEW DIS new LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS new
+        delete: REMOOV DIS new FOREVR
+  news:
+    show:
+      other: OTHR News

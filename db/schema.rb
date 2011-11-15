@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111108101439) do
+ActiveRecord::Schema.define(:version => 20111114162458) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -44,6 +44,42 @@ ActiveRecord::Schema.define(:version => 20111108101439) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "latestnews", :force => true do |t|
+    t.string   "title"
+    t.text     "text1"
+    t.text     "text2"
+    t.datetime "date"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "latestnews", ["id"], :name => "index_latestnews_on_id"
+
+  create_table "news", :force => true do |t|
+    t.string   "title"
+    t.text     "text1"
+    t.text     "text2"
+    t.datetime "date"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "news", ["id"], :name => "index_news_on_id"
+
+  create_table "newsfeeds", :force => true do |t|
+    t.string   "title"
+    t.text     "text1"
+    t.text     "text2"
+    t.datetime "date"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "newsfeeds", ["id"], :name => "index_newsfeeds_on_id"
 
   create_table "operations", :force => true do |t|
     t.string   "title"

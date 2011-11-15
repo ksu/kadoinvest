@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    news:
+      title: News
+  admin:
+    news:
+      actions:
+        create_new: Add New New
+        reorder: Reorder News
+        reorder_done: Done Reordering News
+      records:
+        title: News
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no News yet. Click "Add New New" to add your first new.
+      new:
+        view_live_html: View this new live <br/><em>(opens in a new window)</em>
+        edit: Edit this new
+        delete: Remove this new forever
+  news:
+    show:
+      other: Other News

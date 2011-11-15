@@ -55,7 +55,7 @@ body{
 	display: block;
 
 }
-.type_about_us:hover, .type_operations:hover, .type_careers:hover, .type_news:hover, .type_team:hover{
+.type_about_us:hover div, .type_operations:hover div, .type_careers:hover div, .type_news:hover div, .type_team:hover div{
 	background: url(/images/active_link.png);
 	
 }
@@ -66,6 +66,12 @@ body{
   position: absolute;
   top: 352px;
   left: 171px;
+  padding-bottom: 47px;
+}
+.type_about_us div{
+  height: 89px;
+  width: 202px;
+  display: block;
 }
 
 .type_operations{
@@ -73,18 +79,32 @@ body{
 	width: 265px;
 	display: block;
 	position: absolute;
-    top: 390px;
-    left: 371px;	
+    top: 338px;
+    left: 371px;
+    padding-top: 52px;	
+}
+.type_operations div{
+	height: 97px;
+	width: 265px;
+	display: block;	
 }
 .type_team{
 	height: 56px;
 	width: 154px;
 	display: block;
 	position: absolute;
-  top: 536px;
+  top: 487px;
   left: 371px;
+  padding-top: 49px;
 	
 }
+.type_team div{
+	height: 56px;
+	width: 154px;
+	display: block;
+	
+}
+
 .type_news{
 	height: 41px;
 	width: 163px;
@@ -92,8 +112,16 @@ body{
 	position: absolute;
   top: 488px;
   left: 210px;
+  padding-bottom: 50px;
 	
 }
+
+.type_news div{
+	height: 41px;
+	width: 163px;
+	display: block;	
+}
+
 .type_careers{
 	height: 158px;
 	width: 295px;
@@ -101,6 +129,13 @@ body{
 	position: absolute;
   top: 488px;
   left: 525px;
+  padding-bottom: 53px;
+	
+}
+.type_careers div{
+	height: 158px;
+	width: 295px;
+	display: block;
 	
 }
 .type_menu_container{
@@ -119,14 +154,16 @@ body{
 	display: block;
 	
 }
-.type_contacts{
-	height: 76px;
-	width: 103px;
+.arrow{
+	background: url(/images/arrow.png) no-repeat scroll center top transparent;
 	display: block;
-	position: absolute;
+	height: 76px;
+	width: 38px;
+}
+.type_contacts{
+  position: absolute;	
   top: 298px;
   left: 1034px;
-  background: url(/images/contacts_home.png) no-repeat scroll center top transparent;
 	
 }
 .type_contacts:hover{

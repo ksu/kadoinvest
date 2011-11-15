@@ -1,0 +1,27 @@
+<%= stylesheet_link_tag "operation" %>
+<div class="right">
+  <section class='content'>
+    <div id="operations">
+      <h1>NEWS</h1>
+      <% @news.each do |knew| %>
+
+          <%=raw knew.title %>
+          <%=raw knew.text1 %>
+          <%=raw knew.text2 %>
+
+      <% end %>
+    </div>
+  </section>
+</div>
+<div class="type_menu_container">
+ <div class="type_menu">
+   <%=link_to "", "/about", :class=> "type_about_us"%>
+   <%=link_to "", "/operations", :class=> "type_operations"%>
+   <%=link_to "", "", :class=> "type_team"%>
+   <%=link_to "", "", :class=> "type_news"%>
+   <%=link_to "", "", :class=> "type_careers"%>
+   <%=link_to "", "", :class=> "type_contacts"%>
+   <%=link_to "", "", :class=> "type_start"%>
+ </div>
+</div>
+<%#= render :partial => "/shared/content_page" %>

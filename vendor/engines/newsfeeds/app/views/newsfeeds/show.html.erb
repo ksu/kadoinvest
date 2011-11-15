@@ -1,0 +1,35 @@
+
+<%= stylesheet_link_tag "newsfeed" %>
+<div class="feeds_box">
+    <div id="newsfeed" > 
+	    <%=link_to "", "", :class=> "arrow news_right"%>
+	    <%=link_to "", "", :class=> "news_left"%>     
+      <% @newsfeeds.each do |newsfeed| %>  
+          <div class="left"> 
+	        <a href= "<%= newsfeed_path(newsfeed)%>" class="news_header_block"> 
+		      <h2><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2>  
+          <h2><%=raw newsfeed.title %></h2>
+          <span><%=raw newsfeed.text1 %></span>
+          </a>          
+          </div>
+      <% end %>
+    </div>
+</div>
+<div class="right">
+<div class="content">
+<h1><%=raw @newsfeed.title %></h1>
+    <%=raw @newsfeed.text2 %>
+</div>
+</div>
+<div class="type_menu_container">
+ <div class="type_menu">
+	 <a href="/about" class= "type_about_us"><div></div></a>
+   <a href="/operations" class= "type_operations"><div></div></a>
+   <a href="/team" class= "type_team"><div></div></a>
+   <a href="/newsfeeds" class= "type_news"><div></div></a>
+   <a href="/careers" class= "type_careers"><div></div></a>
+
+ </div>
+</div>
+
+<%#= render :partial => "/shared/content_page" %>

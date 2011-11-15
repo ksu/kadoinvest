@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    news:
+      title: News
+  admin:
+    news:
+      actions:
+        create_new: Lag en ny New
+        reorder: Endre rekkefølgen på News
+        reorder_done: Ferdig å endre rekkefølgen News
+      records:
+        title: News
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen News enda. Klikk på "Lag en ny New" for å legge til din første new.
+      new:
+        view_live_html: Vis hvordan denne new ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne new
+        delete: Fjern denne new permanent
+  news:
+    show:
+      other: Andre News
