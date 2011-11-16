@@ -77,13 +77,9 @@
 	
 }
 .type_contacts{
-	height: 76px;
-	width: 103px;
-	display: block;
 	position: absolute;
-  top: 298px;
-  left: 1034px;
-  background: url(/images/contacts_home.png) no-repeat scroll center top transparent;
+    top: 298px;
+    left: 1128px;
 	
 }
 .type_contacts:hover{
