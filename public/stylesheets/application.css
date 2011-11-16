@@ -163,11 +163,19 @@ body{
 .type_contacts{
   position: absolute;	
   top: 298px;
-  left: 1034px;
+  left: 1128px;
 	
 }
 .type_contacts:hover{
 }
+.start{
+	height: 76px;
+	width: 2px;
+	display: block;
+  background: url(/images/start_home.png) no-repeat scroll center top transparent;
+	
+}
+
 .type_start{
 	height: 76px;
 	width: 2px;

@@ -1,5 +1,6 @@
 
 <%= stylesheet_link_tag "newsfeed" %>
+<%-	newsfeedlast = @newsfeed%>
 <div class="feeds_box">
     <div id="newsfeed" > 
 	    <%=link_to "", "", :class=> "arrow news_right"%>
@@ -7,8 +8,16 @@
       <% @newsfeeds.each do |newsfeed| %>  
           <div class="left"> 
 	        <a href= "<%= newsfeed_path(newsfeed)%>" class="news_header_block"> 
-		      <h2><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2>  
-          <h2><%=raw newsfeed.title %></h2>
+		      <h2 class="newsdate"><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2> 
+          <h2 class="newstitle">
+	          <%-if newsfeed == newsfeedlast %>
+	             <div class="left"> 
+		             <div class="pointer_arrow"> 
+			            </div>
+			          </div>
+			       <% end %> 
+          <%=raw newsfeed.title %>
+          </h2>
           <span><%=raw newsfeed.text1 %></span>
           </a>          
           </div>

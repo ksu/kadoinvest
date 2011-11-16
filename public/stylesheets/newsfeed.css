@@ -45,12 +45,30 @@
 	padding-right: 50px;
 	display: block;
 	text-decoration: none; 
-	overflow: hidden;
 }
 .news_header_block span{
 	color: #2f2f2f;
+
 }
 .news_header_block h2{
 	line-height: 14px;
+
 }
+.news_header_block h2.newstitle{
+	position: relative;
+	margin-top: 4px!important;
+	
+}
+.news_header_block h2.newsdate{
+   margin-bottom: 5px!important; 
+}
+.pointer_arrow{
+	position: absolute;
+	left: -20px;
+	top: -5px;
+	width: 12px;
+	height: 22px;
+	background: url(/images/pointer_arrow.png) no-repeat scroll center top transparent;
+}
+
 /* -------*/

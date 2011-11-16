@@ -13,6 +13,8 @@ textarea{
 	background: url(/images/textarea.png);
 	width: 200px;
 	padding-right: 50px;
+	height: 134px;
+	line-height: 30px;
 }
 input{
 	padding-right: 50px;
@@ -32,9 +34,12 @@ label{
 	cursor: pointer; 
 }
 .actions input{
-	color: #2673a3;
+	color: #ffffff;
 	border: none;
-	background: none;
+	background: #9e9e9e;
 	padding-right: 0;
 	cursor: pointer; 
+	padding: 4px;
+	text-transform: uppercase
+	
 }
