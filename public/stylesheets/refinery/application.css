@@ -1,25 +1,25 @@
 @font-face {
-    font-family: Raleway; /* имя шрифта для CSS правил */
-    src: local("Raleway"), /* проверяем наличие шрифта в ОС пользователя */
-         url(/raleway_thin.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Adobe Caslon Pro; /* имя шрифта для CSS правил */
+    src: local("Adobe Caslon Pro"), /* проверяем наличие шрифта в ОС пользователя */
+         url(/Adobe Caslon Pro.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
 
   }
 
 body {
   margin: 0px;
-  font-family: 'Raleway',serif;
-  font-family: url(/raleway_thin.ttf);
+  font-family: 'Adobe Caslon Pro',serif;
+  font-family: url(/Adobe Caslon Pro.ttf);
   color: #2f2f2f;
 
 }
 p,a,ul,span{
-	font-size: 12px;
-	font-family: 'Raleway',serif;
-	font-family: url(/raleway_thin.ttf);
+	font-size: 13px;
+	font-family: 'Adobe Caslon Pro',serif;
+	font-family: url(/Adobe Caslon Pro.ttf);
 }
 h1, h2{
 	font-size: 14px;
-	color: #2673a3;
+	color: #4f89ac;
 	font-weight: 400;
 }
 h1{
@@ -31,7 +31,7 @@ h1{
 h3{
 	font-size: 12px;
 	font-weight: 400;
-	color: #2673a3;
+	color: #4f89ac;
 	line-height: 12px;
 }
 

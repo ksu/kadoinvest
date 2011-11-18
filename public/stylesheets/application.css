@@ -16,9 +16,19 @@ body{
 
 .logo{
 	display: block;
-	height: 56px;
+	height: 53px;
 	width: 122px;
-	background: url(/images/logo.png);
+	background: url(/images/logo.png) no-repeat;
+	
+}
+.logo_2{
+	display: block;
+	height: 33px;
+	width: 78px;
+	background: url(/images/logo_2.png) no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 588px;
 	
 }
 /* Type page*/
@@ -203,7 +213,7 @@ header{
 	width: 174px;
 	display: block;
 	position: absolute;
-  top: -15px;
+  top: -36px;
   right: 0px;
   text-align: right;
   
