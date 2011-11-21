@@ -1,16 +1,30 @@
-<%= stylesheet_link_tag "operation" %>
-<div class="right">
-  <section class='content'>
-    <div id="operations">
-      <h1>OPERATIONS</h1>
-      <% @operations.each do |operation| %>
 
-          <%=raw operation.title %>
-          <%=raw operation.part %>
-
+<%= stylesheet_link_tag "newsfeed" %>
+<%-	operationfirst = @operations.find(:first) %>
+<div class="feeds_box">
+    <div id="newsfeed" > 
+	    <%=link_to "", "", :class=> "arrow news_right"%>
+	    <%=link_to "", "", :class=> "news_left"%>     
+      <% @operations.each do |operation| %>  
+         <%-if operation != operationfirst %>
+          <div class="left"> 
+	        <a href= "<%= operation_path(operation)%>" class="news_header_block"> 
+            <h2 class="newstitle"> 
+              <%=raw operation.title %>
+          </h2>
+          <span><%=raw operation.shorttext %></span>
+          </a>          
+          </div>
+        <% end %> 
       <% end %>
     </div>
-  </section>
+</div>
+<div class="right">
+<div class="content">
+
+<h1>OPERATIONS</h1>
+    <%=raw operationfirst.part %>
+</div>
 </div>
 <div class="type_menu_container">
  <div class="type_menu">
@@ -19,8 +33,8 @@
    <a href="/team" class= "type_team"><div></div></a>
    <a href="/newsfeeds" class= "type_news"><div></div></a>
    <a href="/careers" class= "type_careers"><div></div></a>
-   <%=link_to "", "", :class=> "type_contacts start"%>
-   <%=link_to "", "", :class=> "type_start"%>
+
  </div>
 </div>
+
 <%#= render :partial => "/shared/content_page" %>

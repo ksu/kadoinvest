@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111114162458) do
+ActiveRecord::Schema.define(:version => 20111121155840) do
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20111114162458) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "shorttext"
   end
 
   add_index "operations", ["id"], :name => "index_operations_on_id"

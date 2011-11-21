@@ -1,33 +1,46 @@
-<% content_for :body_content_title do %>
-  <%= @operation.title %>
-<% end %>
-
-<% content_for :body_content_left do %>
-  <section>
-    <h1>Title</h1>
-    <p>
-      <%=raw @operation.title %>
-    </p>
-  </section>
-  <section>
-    <h1>Part</h1>
-    <p>
-      <%=raw @operation.part %>
-    </p>
-  </section>
-<% end %>
-
-<% content_for :body_content_right do %>
-  <aside>
-    <h2><%= t('.other') %></h2>
-    <ul id="operations">
-      <% @operations.each do |operation| %>
-        <li>
-          <%= link_to operation.title, operation_path(operation) %>
-        </li>
+<%= stylesheet_link_tag "newsfeed" %>
+<%-	operationlast = @operations.find(:last) %>
+<%-	operationfirst = @operations.find(:first) %>
+<div class="feeds_box">
+    <div id="newsfeed" > 
+	    <%=link_to "", "", :class=> "arrow news_right"%>
+	    <%=link_to "", "", :class=> "news_left"%>     
+      <% @operations.each do |operation| %>  
+         <%-if operation != operationfirst %>
+          <div class="left"> 
+	        <a href= "<%= operation_path(operation)%>" class="news_header_block"> 
+            <h2 class="newstitle">
+	            <%-if operation == operationlast %>
+	               <div class="left"> 
+		               <div class="pointer_arrow"> 
+			              </div>
+			            </div>
+			        <% end %> 
+              <%=raw operation.title %>
+          </h2>
+          <span><%=raw operation.shorttext %></span>
+          </a>          
+          </div>
+        <% end %>
       <% end %>
-    </ul>
-  </aside>
-<% end %>
+    </div>
+</div>
+<div class="right">
+<div class="content">
 
-<%= render :partial => "/shared/content_page" %>
+<h1><%=raw operationlast.title %></h1>
+    <%=raw operationlast.part %>
+</div>
+</div>
+<div class="type_menu_container">
+ <div class="type_menu">
+	 <a href="/about" class= "type_about_us"><div></div></a>
+   <a href="/operations" class= "type_operations"><div></div></a>
+   <a href="/team" class= "type_team"><div></div></a>
+   <a href="/newsfeeds" class= "type_news"><div></div></a>
+   <a href="/careers" class= "type_careers"><div></div></a>
+
+ </div>
+</div>
+
+<%#= render :partial => "/shared/content_page" %>
