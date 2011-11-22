@@ -1,4 +1,4 @@
-<%= stylesheet_link_tag "newsfeed" %>
+<%= stylesheet_link_tag "operation" %>
 <%-	operationlast = @operations.find(:last) %>
 <%-	operationfirst = @operations.find(:first) %>
 <div class="feeds_box">
@@ -8,17 +8,18 @@
       <% @operations.each do |operation| %>  
          <%-if operation != operationfirst %>
           <div class="left"> 
+	          <h2 class="newstitle">
+               <%-if operation == operationlast %>
+                 <div class="left"> 
+	                 <div class="pointer_arrow"> 
+		                </div>
+		              </div>
+		           <% end %> 
+               <%=raw operation.title %>
+            </h2>
 	        <a href= "<%= operation_path(operation)%>" class="news_header_block"> 
-            <h2 class="newstitle">
-	            <%-if operation == operationlast %>
-	               <div class="left"> 
-		               <div class="pointer_arrow"> 
-			              </div>
-			            </div>
-			        <% end %> 
-              <%=raw operation.title %>
-          </h2>
-          <span><%=raw operation.shorttext %></span>
+
+             <span><%=raw operation.shorttext %></span>
           </a>          
           </div>
         <% end %>
