@@ -48,6 +48,11 @@ body{
 	display: block;
 	height: auto;
 	width: 703px;
+	z-index: 2000;
+	position: relative;
+}
+.content a{
+  color: #4f89ac;
 }
 .content p{
 	word-spacing: 1.5px;
@@ -162,6 +167,7 @@ body{
 	height: 808px;
 	width: 925px;
 	display: block;
+	z-index: 1;
 	
 }
 .arrow{

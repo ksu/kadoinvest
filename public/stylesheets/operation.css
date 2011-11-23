@@ -46,6 +46,9 @@
 	display: block;
 	text-decoration: none; 
 }
+.news_header_block a{
+	text-decoration: none; 
+}
 .news_header_block span{
 	color: #2f2f2f;
 
