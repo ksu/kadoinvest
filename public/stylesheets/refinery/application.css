@@ -17,10 +17,11 @@ p,a,ul,span{
 	font-family: 'Adobe Caslon Pro',serif;
 	font-family: url(/Adobe Caslon Pro.ttf);
 }
-h1, h2{
+h1, h2, h1 a, h2 a{
 	font-size: 14px;
 	color: #4f89ac;
 	font-weight: 400;
+	text-decoration: none;
 }
 h1{
 	font-size: 22px;
@@ -28,11 +29,12 @@ h1{
 	line-height: 20px;
 	text-transform: uppercase;
 }
-h3{
+h3, h3 a{
 	font-size: 12px;
 	font-weight: 400;
 	color: #4f89ac;
 	line-height: 12px;
+	text-decoration: none;
 }
 
 #page, #site_bar_content, footer, header {

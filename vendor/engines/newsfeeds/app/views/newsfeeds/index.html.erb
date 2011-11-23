@@ -5,18 +5,22 @@
 	    <%=link_to "", "", :class=> "arrow news_right"%>
 	    <%=link_to "", "", :class=> "news_left"%>     
       <% @newsfeeds.each do |newsfeed| %>  
-          <div class="left"> 
-	        <a href= "<%= newsfeed_path(newsfeed)%>" class="news_header_block"> 
-		      <h2 class="newsdate"><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2> 
-          <h2 class="newstitle">
+          <div class="left news_header_block"> 	        
+		      <h2 class="newsdate"><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2>           
 	          <%-if newsfeed == newsfeedlast %>
-	             <div class="left"> 
-		             <div class="pointer_arrow"> 
+	             <h2 class="newstitle">
+	               <div class="left"> 
+		                 <div class="pointer_arrow"> 
+			                </div>
 			            </div>
-			          </div>
-			      <% end %> 
-          <%=raw newsfeed.title %>
-          </h2>
+			           <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
+			         </h2>
+			      <% else %>
+			       <h2 class="newstitle"> 
+              <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
+             </h2>
+         <% end %>
+          <a href= "<%= newsfeed_path(newsfeed)%>" class=""> 
           <span><%=raw newsfeed.text1 %></span>
           </a>          
           </div>
