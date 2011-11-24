@@ -14,7 +14,10 @@ textarea{
 	width: 200px;
 	padding-right: 50px;
 	height: 134px;
-	line-height: 30px;
+	line-height: 32px;
+	padding-top: 0px;
+	font-family: 'Adobe Caslon Pro',serif;
+    font-family: url(/Adobe Caslon Pro.ttf);
 }
 input{
 	padding-right: 50px;

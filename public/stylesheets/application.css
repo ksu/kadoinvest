@@ -51,7 +51,7 @@ body{
 	z-index: 2000;
 	position: relative;
 }
-.content a{
+.content a, inner a{
   color: #4f89ac;
 }
 .content p{
