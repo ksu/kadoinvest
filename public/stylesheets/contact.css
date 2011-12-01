@@ -26,67 +26,90 @@
 	display: block;
 	
 }
+.about_us:hover div, .operations:hover div, .careers:hover div, .news:hover div, .team:hover div{
+	background: url(/images/active_link.png);
+}
+
 .about_us{
-	height: 194px;
+	height: 127px;
 	width: 290px;
 	display: block;
 	position: absolute;
-  top: 27px;
-  left: 0px;	
+	padding-bottom: 68px;
+    top: 27px;
+    left: 0px;	
+}
+.about_us div{
+	height: 127px;
+	width: 290px;
+	display: block;		
 }
 
-.about_us:hover{
-	background: url(/images/about_home.png) no-repeat;
-	
-}
 .operations{
-	height: 212px;
-	width: 377px;
+	height: 139px;
+	width: 378px;
 	display: block;
 	position: absolute;
-  top: 9px;
-  left: 287px;
+	padding-top: 73px;
+    top: 9px;
+    left: 287px;
 	
 }
-.operations:hover{
-	background: url(/images/oper_home.png) no-repeat scroll center bottom transparent;	
+.operations div{
+	height: 139px;
+	width: 378px;
+	display: block;	
 }
+
+
 .team{
-	height: 149px;
+	height: 80px;
 	width: 218px;
 	display: block;
 	position: absolute;
-  top: 221px;
-  left: 288px;
+    top: 222px;
+    left: 288px;
+    padding-top: 69px;
 	
 }
-.team:hover{
-	background: url(/images/team_home.png) no-repeat scroll center bottom transparent;	
+.team div{
+	height: 80px;
+	width: 218px;
+	display: block;	
 }
+
 .news{
-	height: 131px;
+	height: 60px;
 	width: 231px;
 	display: block;
 	position: absolute;
-  top: 221px;
-  left: 57px;
-	
+    top: 221px;
+    left: 57px;
+	padding-bottom: 70px;
 }
-.news:hover{
-	background: url(/images/news_home.png) no-repeat scroll center top transparent;	
+.news div{
+	height: 60px;
+	width: 231px;
+	display: block;
 }
+
 .careers{
-	height: 300px;
+	height: 226px;
 	width: 419px;
 	display: block;
 	position: absolute;
-  top: 221px;
-  left: 506px;
-	
+    top: 221px;
+    left: 506px;
+	padding-bottom: 75px;
 }
-.careers:hover{
-	background: url(/images/careers_home.png) no-repeat scroll center top transparent;	
+.careers div{
+	height: 226px;
+	width: 419px;
+	display: block;	
 }
+
+
+
 .contacts{
 	height: 76px;
 	width: 103px;
