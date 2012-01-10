@@ -21,8 +21,8 @@ jQuery(document).ready(function() {
 						<h2 class="newstitle"> 
 							<%= link_to operation.title, operation_path(operation)%>
 	          </h2>
-	        <a href= "<%= operation_path(operation)%>" class="">             
-	        <span><%=raw operation.shorttext %></span>
+	        <a href= "<%= operation_path(operation)%>" class="type_text">             
+	        <span> <%= raw truncate(operation.shorttext, :length => 112, :omission => '...' ) %></span>
 	        </a>          
 	        </div>
 		    </li>

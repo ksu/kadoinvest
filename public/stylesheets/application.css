@@ -247,5 +247,8 @@ footer p{
  display: block;
  font-size: 10px; 
 }
+.type_text, .type_text a{
+	color: #2f2f2f
+}
 
 
