@@ -19,16 +19,17 @@ body{
 	height: 53px;
 	width: 122px;
 	background: url(/images/logo.png) no-repeat;
+	margin-top: 7px;
 	
 }
 .logo_2{
 	display: block;
-	height: 33px;
-	width: 78px;
+	height: 12px;
+	width: 84px;
 	background: url(/images/logo_2.png) no-repeat;
 	position: absolute;
-	top: 0px;
-	left: 588px;
+	top: 77px;
+	left: 0px;
 	
 }
 /* Type page*/
@@ -58,11 +59,26 @@ body{
 	word-spacing: 1.5px;
 	letter-spacing: 0.5px;
 }
-#page{
+.contentpage{
 	display: block!important;
 	height: 806px;
 	position: relative;
 	padding-top: 45px;
+	
+}
+#page{
+	background: url(/images/main_bg.png);
+	background-repeat:repeat-x;
+	/*background: #fff;
+	background: -moz-linear-gradient(
+			top,
+			#c5c5c5 0%,
+			#fff);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#c5c5c5),
+		to(#fff));
+	*/
 	
 }
 #page_container{
@@ -212,14 +228,15 @@ body{
 /* -------*/
 header{
 	position: relative;
-	margin-top: 49px;
+	margin-top: 22px;
+	min-height: 123px;
 }
 .address_box{
 	height: 107px;
 	width: 174px;
 	display: block;
 	position: absolute;
-  top: -36px;
+  top: 0px;
   right: 0px;
   text-align: right;
   
@@ -228,9 +245,22 @@ header{
 .address_box p{
 	margin: 12px 0 12px 0;
 	font-size: 11px;
+	color: #a9a9a9;
 }
-.address_box h3{
+.upper{
+	text-transform: uppercase;
+}
+.address_box p .upper{
 	font-size: 11px;
+	color: #666666;
+}
+.address_box h3, .address_box h3 span{
+	font-size: 11px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.address_box h3 span{
+	color: #191919;
 }
 
 footer{

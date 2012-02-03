@@ -16,8 +16,8 @@ textarea{
 	height: 134px;
 	line-height: 32px;
 	padding-top: 0px;
-	font-family: 'Adobe Caslon Pro',serif;
-    font-family: url(/Adobe Caslon Pro.ttf);
+	font-family: 'Helvetica','Verdana', 'Trebuchet MS';
+    font-family: url(/Helvetica.ttf);
 }
 input{
 	padding-right: 50px;

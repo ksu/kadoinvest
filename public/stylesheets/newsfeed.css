@@ -1,12 +1,12 @@
 /* Type page*/
 
-#page{
+.contentpage{
 	padding-top: 208px;
 }
 .feeds_box{
 	position: absolute;
 	top: 45px;
-	left: -120px;
+	left: -120px;F
 	width: 1165px;
 }
 .newsfeed{
