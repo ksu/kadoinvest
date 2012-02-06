@@ -46,3 +46,7 @@ label{
 	text-transform: uppercase
 	
 }
+input, input[type="password"], input[type="search"], isindex{
+	background: transparent;
+	
+}

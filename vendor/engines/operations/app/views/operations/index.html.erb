@@ -12,6 +12,17 @@ jQuery(document).ready(function() {
 
 <%-	operationfirst = @operations.find(:first) %>
 <div class="contentpage">
+	<div class="type_menu_container">
+	 <div class="type_menu">
+		 <a href="/about" class= "type_about_us"><div></div></a>
+	   <a href="/operations" class= "type_operations"><div></div></a>
+	   <a href="/team" class= "type_team"><div></div></a>
+	   <a href="/newsfeeds" class= "type_news"><div></div></a>
+	   <a href="/careers" class= "type_careers"><div></div></a>
+
+	 </div>
+	</div>
+	
 <div class="feeds_box">	
 	<div id="wrap">
 	  <ul id="mycarousel" class="jcarousel-skin-tango">
@@ -39,16 +50,6 @@ jQuery(document).ready(function() {
 <h1>OPERATIONS</h1>
     <%=raw operationfirst.part %>
 </div>
-</div>
-<div class="type_menu_container">
- <div class="type_menu">
-	 <a href="/about" class= "type_about_us"><div></div></a>
-   <a href="/operations" class= "type_operations"><div></div></a>
-   <a href="/team" class= "type_team"><div></div></a>
-   <a href="/newsfeeds" class= "type_news"><div></div></a>
-   <a href="/careers" class= "type_careers"><div></div></a>
-
- </div>
 </div>
 </div>
 <%#= render :partial => "/shared/content_page" %>
