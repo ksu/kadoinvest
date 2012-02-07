@@ -38,27 +38,6 @@ jQuery(document).ready(function() {
 	      </div>
 	    </li>
 	
-	    <li>
-		    <div class="left news_header_block"> 	        
-	          <%-if newsfeed == newsfeedlast %>
-	             <h2 class="newstitle">
-	               <div class="left"> 
-		                 <div class="pointer_arrow"> 
-			                </div>
-			            </div>
-			           <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
-			         </h2>
-			      <% else %>
-			       <h2 class="newstitle"> 
-             <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
-            </h2>
-           <% end %>
-            <a href= "<%= newsfeed_path(newsfeed)%>" class=""> 
-	          <span><%=raw newsfeed.text1 %></span>
-	          </a>
-	      </div>
-	    </li>
-	
 	    <% end %>
 	  </ul>
 
