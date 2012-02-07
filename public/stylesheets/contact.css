@@ -9,126 +9,13 @@
 	display: block;
 
 }
-.home_menu_container{
-	display: block!important;
-	height: 808px;
-	width: 925px;
-	background: url(/images/home_menu.png) no-repeat;
-	position: absolute;
-	bottom: 0;
-	left: -130px;
-	background-position: bottom;	
-}
-.home_menu{
-	position: relative;
-	height: 808px;
-	width: 925px;
-	display: block;
-	
-}
-.about_us:hover div, .operations:hover div, .careers:hover div, .news:hover div, .team:hover div{
-	background: url(/images/active_link.png);
-}
-
-.about_us{
-	height: 127px;
-	width: 290px;
-	display: block;
-	position: absolute;
-	padding-bottom: 68px;
-    top: 27px;
-    left: 0px;	
-}
-.about_us div{
-	height: 127px;
-	width: 290px;
-	display: block;		
-}
-
-.operations{
-	height: 139px;
-	width: 378px;
-	display: block;
-	position: absolute;
-	padding-top: 73px;
-    top: 9px;
-    left: 287px;
-	
-}
-.operations div{
-	height: 139px;
-	width: 378px;
-	display: block;	
-}
-
-
-.team{
-	height: 80px;
-	width: 218px;
-	display: block;
-	position: absolute;
-    top: 222px;
-    left: 288px;
-    padding-top: 69px;
-	
-}
-.team div{
-	height: 80px;
-	width: 218px;
-	display: block;	
-}
-
-.news{
-	height: 60px;
-	width: 231px;
-	display: block;
-	position: absolute;
-    top: 221px;
-    left: 57px;
-	padding-bottom: 70px;
-}
-.news div{
-	height: 60px;
-	width: 231px;
-	display: block;
-}
-
-.careers{
-	height: 226px;
-	width: 419px;
-	display: block;
-	position: absolute;
-    top: 221px;
-    left: 506px;
-	padding-bottom: 75px;
-}
-.careers div{
-	height: 226px;
-	width: 419px;
-	display: block;	
-}
-
-
-
-.contacts{
-	height: 76px;
-	width: 103px;
-	display: block;
-	position: absolute;
-  top: 221px;
-  left: 1112px;
-  background: url(/images/start_home.png) no-repeat;
-	
-}
-.contacts:hover{
-}
-.start{
-	height: 76px;
-	width: 2px;
-	display: block;
-	position: absolute;
-  top: 221px;
-  left: -31px;
-  background: url(/images/start_home.png) no-repeat scroll center top transparent;
-	
+.content {
+display: block;
+height: auto;
+width: 328px;
+z-index: 2000;
+position: relative;
+padding-left: 191px;
+padding-right: 406px;
+min-height: 100px;
 }
