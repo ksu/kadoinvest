@@ -52,6 +52,7 @@ body{
 	z-index: 2000;
 	position: relative;
 	padding-left: 191px;
+	min-height: 100px;
 }
 .content a, inner a{
   color: #4f89ac;
@@ -421,13 +422,13 @@ h1 .newsdate{
 }
 
 .jcarousel-skin-tango .jcarousel-item {
-    width: 180px;
-    height: 180px;
+    width: 182px;
+    height: 100px;
 }
 
 .jcarousel-skin-tango .jcarousel-item-horizontal {
 	margin-left: 0;
-    margin-right: 50px;
+    margin-right: 52px;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
