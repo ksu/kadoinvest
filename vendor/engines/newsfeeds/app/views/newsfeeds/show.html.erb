@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
 		  <% @newsfeeds.each do |newsfeed| %>  
 	    <li>
 		    <div class="left news_header_block"> 	        
-	      <h2 class="newsdate"><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2>
+	      
 	          <%-if newsfeed == newsfeedcurent %>
 	             <h2 class="newstitle">
 	               <div class="left"> 
@@ -46,7 +46,7 @@ jQuery(document).ready(function() {
 </div>
 <div class="right">
 <div class="content">
-<h1><%=raw @newsfeed.title %></h1>
+<h1><%=raw @newsfeed.title %><span class="newsdate"><%= truncate(@newsfeed.date.to_s, :length => 11, :omission => '' ) %></span></h1>
     <%=raw @newsfeed.text2 %>
 </div>
 </div>

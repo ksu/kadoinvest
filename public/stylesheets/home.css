@@ -5,13 +5,12 @@
 
 .contentpage{
 	display: block!important;
-	height: 690px;
+	height: 685px;
 	position: relative;
 	padding-top: 0px;
 	
 }
 #page_container{
-	height: 938px;
 	display: block;
 
 }
@@ -149,4 +148,9 @@
 	left: 0;
 	width: 282px;
 	height: auto;
+}
+footer p{
+ position: absolute;
+ bottom: 10px;
+ left: 0px;
 }

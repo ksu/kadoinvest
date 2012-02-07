@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 		  <% @newsfeeds.each do |newsfeed| %>  
 	    <li>
 		    <div class="left news_header_block"> 	        
-	      <h2 class="newsdate"><%= truncate(newsfeed.date.to_s, :length => 11, :omission => '' ) %></h2>
+	      
 	          <%-if newsfeed == newsfeedlast %>
 	             <h2 class="newstitle">
 	               <div class="left"> 
@@ -37,6 +37,28 @@ jQuery(document).ready(function() {
 	          </a>
 	      </div>
 	    </li>
+	
+	    <li>
+		    <div class="left news_header_block"> 	        
+	          <%-if newsfeed == newsfeedlast %>
+	             <h2 class="newstitle">
+	               <div class="left"> 
+		                 <div class="pointer_arrow"> 
+			                </div>
+			            </div>
+			           <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
+			         </h2>
+			      <% else %>
+			       <h2 class="newstitle"> 
+             <%=link_to newsfeed.title, newsfeed_path(newsfeed) %>
+            </h2>
+           <% end %>
+            <a href= "<%= newsfeed_path(newsfeed)%>" class=""> 
+	          <span><%=raw newsfeed.text1 %></span>
+	          </a>
+	      </div>
+	    </li>
+	
 	    <% end %>
 	  </ul>
 
@@ -46,7 +68,7 @@ jQuery(document).ready(function() {
 <div class="right">
 <div class="content">
 
-<h1><%=raw newsfeedlast.title %></h1>
+<h1><%=raw newsfeedlast.title %><span class="newsdate"><%= truncate(newsfeedlast.date.to_s, :length => 11, :omission => '' ) %></span></h1>
     <%=raw newsfeedlast.text2 %>
 </div>
 </div>
