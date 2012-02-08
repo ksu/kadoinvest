@@ -12,11 +12,11 @@
  </div>
 <div class="type_menu_container">
  <div class="type_menu">
-	 <a href="/about" class= "type_about_us"><div></div></a>
+   <a href="/about" class= "<%-if @page.title == "About" %> type_about_us active <%-else %> type_about_us <%-end%>"><div></div></a>
    <a href="/operations" class= "type_operations"><div></div></a>
-   <a href="/team" class= "type_team"><div></div></a>
+   <a href="/team" class= "<%-if @page.title == "Team" %> type_team active <%-else %> type_team <%-end%>"><div></div></a>
    <a href="/newsfeeds" class= "type_news"><div></div></a>
-   <a href="/careers" class= "type_careers"><div></div></a>
+   <a href="/careers" class= "<%-if @page.title == "Careers" %> type_careers active <%-else %> type_careers<%-end%>"><div></div></a>
  </div>
 </div>
 </div>
