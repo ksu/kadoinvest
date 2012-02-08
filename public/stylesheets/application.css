@@ -63,9 +63,10 @@ body{
 }
 .content h1{
 	position: absolute;
-	width: 190px;
+	width: 170px;
 	top: 0px;
 	left: 0px;
+	padding-right: 20px;
 }
 .contentpage{
 	display: block!important;
@@ -342,7 +343,7 @@ footer p a{
 .news_header_block a{
 	text-decoration: none; 
 }
-.news_header_block .newstitle a{
+.news_header_block .newstitle a, .newstitle{
 	text-decoration: none; 
 	font-size: 12px;
 	line-height: 14px;
